@@ -21,3 +21,80 @@
   object-fit: cover;
   background-image: url("../img/backroundHome.png");
 }
+
+.home-frame .home-page .home-travels {
+  width: 1200px;
+  height: 500px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-frame .home-page .home-travels .travel-main {
+  position: relative;
+  width: 284px;
+  height: 475px;
+}
+
+.home-frame .home-page .home-travels .travel-main .travel-box {
+}
+
+.home-frame .home-page .home-travels .travel-main .travel-box:hover {
+  opacity: 0.4 !important;
+}
+
+.home-frame
+  .home-page
+  .home-travels
+  .travel-main
+  .travel-box:hover
+  ~ .view-details {
+  display: flex;
+  opacity: 1;
+}
+
+.home-frame .home-page .home-travels .travel-main .view-details {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  width: 187px;
+  height: 51px;
+  border: none;
+  background: rgba(255, 255, 255, 0.92);
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  color: rgb(0, 0, 0);
+  font-family: "Kufam";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.home-frame .home-page .home-travels .travel-main .travel-box .address {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 399px;
+  color: rgb(255, 255, 255);
+  font-family: "Kufam";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+}

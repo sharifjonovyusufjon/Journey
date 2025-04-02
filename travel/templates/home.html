@@ -7,12 +7,28 @@
 <div class="home-frame">
   <div class="home-page">
     <div class="home-header"></div>
+    <div class="home-travels">
+      {% for travel in travels %}
+      <div class="travel-main">
+        <div
+          class="travel-box"
+          style="background-image: url('{{ travel.travelImg }}'); 
+        position: relative;
+        background-repeat: no-repeat; 
+        background-size: cover;   
+        width: 284px;
+        height: 475px; 
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;"
+        >
+          <span class="address">{{travel.travelAddress}}</span>
+        </div>
+        <button class="view-details">View Details</button>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 {% endblock %}
-
-<!-- {% for x in travels %}
-<li>
-  <a href="details/{{ x.id }}">{{ x.travelTitle }} {{ x.travelImg }}</a>
-</li>
-{% endfor %} -->

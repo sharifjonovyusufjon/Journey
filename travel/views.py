@@ -5,7 +5,7 @@ from .models import Travel
 # Create your views here.
 
 def main(request):
-    travels = Travel.objects.all().values()
+    travels = Travel.objects.all().values()[:4]
     template = loader.get_template('home.html')
     context = {
         'travels': travels,
