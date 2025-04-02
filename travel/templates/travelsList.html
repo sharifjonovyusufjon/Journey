@@ -5,17 +5,21 @@
 
 <!-- content -->
 {% block content %}
-<ul>
-  {% for travel in travels %}
-  <li>
-    <a href="details/{{ travel.id }}"><h1>{{ travel.travelTitle }}</h1></a>
+<div class="travel-frame">
+  <div class="travel-home">
+    <ul>
+      {% for travel in travels %}
+      <li>
+        <a href="details/{{ travel.id }}"><h1>{{ travel.travelTitle }}</h1></a>
 
-    <p>{{ travel.travelDesc }}</p>
-    <p>{{ travel.travelAddress }}</p>
-  </li>
-  {% endfor %}
-</ul>
+        <p>{{ travel.travelDesc }}</p>
+        <p>{{ travel.travelAddress }}</p>
+      </li>
+      {% endfor %}
+    </ul>
 
-<p>Home to <a href="/">HOME</a></p>
+    <p>Home to <a href="/">HOME</a></p>
+  </div>
+</div>
 
 {% endblock %}

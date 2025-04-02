@@ -1,0 +1,12 @@
+.travel-frame {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.travel-frame .travel-home {
+  width: 1440px;
+}
