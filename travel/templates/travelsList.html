@@ -1,0 +1,21 @@
+<!-- extends -->
+{% extends "global.html" %}
+<!-- title -->
+{% block title %} Travel List {% endblock %}
+
+<!-- content -->
+{% block content %}
+<ul>
+  {% for travel in travels %}
+  <li>
+    <a href="details/{{ travel.id }}"><h1>{{ travel.travelTitle }}</h1></a>
+
+    <p>{{ travel.travelDesc }}</p>
+    <p>{{ travel.travelAddress }}</p>
+  </li>
+  {% endfor %}
+</ul>
+
+<p>Home to <a href="/">HOME</a></p>
+
+{% endblock %}

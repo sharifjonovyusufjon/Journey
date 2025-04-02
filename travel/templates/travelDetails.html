@@ -1,0 +1,15 @@
+<!-- extends -->
+{% extends "global.html" %}
+<!-- title -->
+{% block title %} Details about {{ travel.travelTitle }} {% endblock %}
+
+<!-- content -->
+{% block content %}
+<h1>{{ travel.travelTitle }}</h1>
+
+<p>{{ travel.travelDesc }}</p>
+<p>{{ travel.travelAddress }}</p>
+
+<p>Back to <a href="/travel">TravelList</a></p>
+
+{% endblock %}
