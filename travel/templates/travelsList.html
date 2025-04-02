@@ -7,18 +7,29 @@
 {% block content %}
 <div class="travel-frame">
   <div class="travel-home">
-    <ul>
+    <div class="list-travels">
       {% for travel in travels %}
-      <li>
-        <a href="details/{{ travel.id }}"><h1>{{ travel.travelTitle }}</h1></a>
-
-        <p>{{ travel.travelDesc }}</p>
-        <p>{{ travel.travelAddress }}</p>
-      </li>
+      <a href="details/{{ travel.id }}">
+        <div class="travel-main">
+          <div
+            class="travel-box"
+            style="background-image: url('{{ travel.travelImg }}'); 
+              position: relative;
+              background-repeat: no-repeat; 
+              background-size: cover;   
+              width: 330px;
+              height: 475px; 
+              border-radius: 10px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;"
+          >
+            <span class="address">{{travel.travelAddress}}</span>
+          </div>
+        </div>
+      </a>
       {% endfor %}
-    </ul>
-
-    <p>Home to <a href="/">HOME</a></p>
+    </div>
   </div>
 </div>
 

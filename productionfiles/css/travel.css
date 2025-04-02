@@ -9,4 +9,40 @@
 
 .travel-frame .travel-home {
   width: 1440px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.travel-frame .travel-home .list-travels {
+  width: 100%;
+  height: 500px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.travel-frame .travel-home .list-travels .travel-main .travel-box:hover {
+  opacity: 0.8 !important;
+}
+
+.travel-frame .travel-home .list-travels .travel-main .travel-box .address {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 399px;
+  color: rgb(255, 255, 255);
+  font-family: "Kufam";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
 }
