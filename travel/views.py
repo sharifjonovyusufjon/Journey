@@ -5,5 +5,9 @@ from .models import Travel
 # Create your views here.
 
 def main(request):
+    travels = Travel.objects.all().values()
     template = loader.get_template('home.html')
-    return HttpResponse(template.render())
+    context = {
+        'travels': travels,
+    }
+    return HttpResponse(template.render(context, request))

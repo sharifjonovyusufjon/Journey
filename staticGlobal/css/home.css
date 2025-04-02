@@ -1,0 +1,23 @@
+.home-frame {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-frame .home-page {
+  width: 1440px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-frame .home-page .home-header {
+  width: 1440px;
+  height: 668px;
+  object-fit: cover;
+  background-image: url("../img/backroundHome.png");
+}
